@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
 
-
 import logo from '../../assets/images/cdlogo.png';
 
 export default class Login extends Component {
@@ -19,13 +18,13 @@ export default class Login extends Component {
               
 
                 <div className="form-group">
-                    <label>Username</label>
-                    <input type="text" className="form-control" placeholder="Enter username" />
+                   
+                    <input type="text" className="form-cntrl" placeholder="Enter username" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                  
+                    <input type="password" className="form-cntrl" placeholder="Enter password" />
                 </div>
 
                 <div className="form-group">
@@ -35,7 +34,7 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <UserHomeButton />
+                <UserHomeButton className="login-home-butn" />
                 <p className="pw">Forgot 
                         <Link className="link"to="/forgotpw"> Password</Link>
                         ?
