@@ -74,8 +74,10 @@ export default class Game extends Component {
             const { playerOne, computer, winner } = this.state;
         return (
             
+
              <div>
                
+               <Row> <a href="/menu" className="menu-game-butn">Home</a> </Row>
                 <div class="score-board">
                     <div id = "user-label" class = "badge" ><i class="fas fa-user"></i></div>
                     <div id = "computer-label" class = "badge" > <i class="fas fa-robot"></i> </div>
@@ -88,11 +90,11 @@ export default class Game extends Component {
                     <Computer compSelection={computer} />
                 </Row>
                 
-                 <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : "Who will win??"}</></div> </Row>
+                 <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : "May The Best Win!!!"}</></div> </Row>
                 <Row className="choices ">
                     <roundbutton className="selectionButton"
                         onClick={() => this.selectSelection("rock")}>  
-                        <img  src={rock}height="90px" center alt="pipeline"/>
+                        <img  src={rock}height="75px" center alt="pipeline"/>
                     </roundbutton>
                     
                     <roundbutton className="selectionButton "
