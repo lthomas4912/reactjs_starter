@@ -17,7 +17,7 @@ import Menu from './components/MenuContainer/Menu.js';
 import ForgotPassword from "./components/ForgotPasswordContainer/ForgotPassword.js";
 import EnglishInstructions from './components/InstructionContainer/EnglishInstructions.js';
 import SpanishInstructions from './components/InstructionContainer/SpanishInstructions.js';
-
+import SimpleBottomNavigation from './components/TabBarContainer/TabBar.js';
 
 
 
@@ -26,7 +26,7 @@ import SpanishInstructions from './components/InstructionContainer/SpanishInstru
 function App() {
   return (
      <Container>   
-
+   <SimpleBottomNavigation/>
         <Router>
           <div className="App">
          
