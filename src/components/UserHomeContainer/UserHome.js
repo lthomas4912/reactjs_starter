@@ -3,9 +3,12 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 
-import MenuButton from '../ButtonsContainer/MenuButton.js';
+
 import PlayButton from '../ButtonsContainer/PlayButton.js';
 import EnglishInstructionsButton from '../ButtonsContainer/EnglishInstructionsButton.js';
+import SecondBottomNavBar from '../NavbarContainer/SecondBottomNavBar.js';
+import PaypalButton from '../ButtonsContainer/PaypalButton.js';
+
 
 
 import plain from '../../assets/images/default-profile-image.png';
@@ -19,12 +22,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
         
             <div className="user-home">
                  
-                    <Image src={plain} height="120px" alt="vector" className='vector' />
+                    <Image src={plain} height="90px" alt="vector" className='vector' />
                 <br></br>   
                     <button className ="user-direct" to="/my-profile">My profile</button>
-                <br></br>
-                    <button className ="user-direct" to="/game-stats">Game Stats</button>
-               <br></br>     
+                <br></br>   
                     <button className ="user-direct" to="/friend-requests">Friend Requests</button>
                 <br></br>    
                     <EnglishInstructionsButton/>              
@@ -32,10 +33,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     <p>
                        Donate $1 or more to fund our Youth Technology
                        Learning Program based in Wilmington, DE.</p> 
-
-                    <button id="donate-button" to="/donate">Donate</button>
+                    <div> <PaypalButton /> </div>
             </div>
-
+            {/* <Row className="bot-navbar"><SecondBottomNavBar /></Row> */}
         </div>
 
         );
