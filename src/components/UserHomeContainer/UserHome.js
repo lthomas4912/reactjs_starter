@@ -28,8 +28,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
                
                     <button className ="userhome-but request" to="/friend-requests">Friend Requests</button> </Row>
              
-                   <Row> <EnglishInstructionsButton className="userhome-but English"/>              
-                    <PlayButton /> </Row>
+                   <div> <EnglishInstructionsButton className="English"/>              
+                    <PlayButton className="play" /> </div>
                     <p>
                        Donate $1 or more to fund our Youth Technology
                        Learning Program based in Wilmington, DE.</p> 

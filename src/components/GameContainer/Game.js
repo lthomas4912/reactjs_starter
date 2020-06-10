@@ -6,20 +6,21 @@ import Computer from '../ComputerContainer/Computer.js';
 import rock from '../../assets/images/rock.png';
 import paper from '../../assets/images/paper.png';
 import scissors from '../../assets/images/scissors.png';
-import questionMark from '../../assets/images/question-mark.png';
+
 
 
 const selection = ["rock", "paper", "scissors"];
-const compSelection = [ "questionMark", "comprock", "compscissors", "comppaper"];
+const compSelection = ["comprock", "compscissors", "comppaper"];
 
 
 
 export default class Game extends Component {
     
-
-    state = {
+constructor(props){
+    super(props);
+    this.state = {
         playerOne: "" ,
-        computer: compSelection[0],
+        computer: "",
         winner: "",
         playerWin: 0,
         computerWin: 0,
@@ -27,6 +28,7 @@ export default class Game extends Component {
         computerCounter: 1
        
     };
+}
 
     startGame = () => {
 
@@ -107,7 +109,7 @@ export default class Game extends Component {
 
             const playerHand = this.state.playerOne;
             const computerHand = this.state.computer;
-           // scoreboard codelines 79-83 
+          
         return (
             
              <div className='game-page'>

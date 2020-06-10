@@ -9,7 +9,7 @@ export default class SpanishInstruction extends Component{
     render(){
         return(
             <form className = "Spanish-page">
-                <h1>Instrucciones</h1>
+                <h2 className="Spanish-title">Instrucciones</h2>
                 <p>
                     Para jugar el juego de 
                     Piedra, Papel y Tijeras ay unos pasos simples que 
@@ -40,7 +40,7 @@ export default class SpanishInstruction extends Component{
                     Complete my avatar = completar mi avatar Login = Inicia Sesion
                 </p>
                
-                <Row className="user-direct regresar" ><RegresarButton /></Row>
+                <div className="" ><RegresarButton /></div>
             </form>
         )
     }

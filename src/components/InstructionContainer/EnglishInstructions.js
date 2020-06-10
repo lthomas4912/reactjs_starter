@@ -12,7 +12,7 @@ export default class EnglishInstruction extends Component{
     render(){
         return(
             <form className = "English-page">
-                <h1 className = "title">Instructions</h1>
+                <h2 className = "title">Instructions</h2>
                 <p className = "instruction">
                     To play Rock, Paper, 
                     Scissors, there are a few simple steps that you must 
@@ -32,8 +32,11 @@ export default class EnglishInstruction extends Component{
                     click “Play again” button after a game is finished. 
 
                 </p>
-                <Row className=" user-direct Spanish-instruct"> <InstruccionesButton /> </Row>
-                <Row className=" user-direct English-instruct"><PlayButton /></Row>
+                <div > 
+                <InstruccionesButton className="Spanish-Eng"/> 
+                <PlayButton  />
+                </div>
+                
                 
             </form>
         )
