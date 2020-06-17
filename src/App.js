@@ -12,14 +12,14 @@ import SignUp from "./components/SignUpContainer/SignUp.js";
 import UserHome from './components/UserHomeContainer/UserHome.js';
 import MainWelcome from './components/MainWelcomeContainer/MainWelcome.js';
 import Game from  './components/GameContainer/Game.js';
-import Menu from './components/MenuContainer/Menu.js';
 import ForgotPassword from "./components/ForgotPasswordContainer/ForgotPassword.js";
 import EnglishInstructions from './components/InstructionContainer/EnglishInstructions.js';
 import SpanishInstructions from './components/InstructionContainer/SpanishInstructions.js';
 
 import SecondBottomNavBar from './components/NavbarContainer/SecondBottomNavBar.js';
+import SecondMainWelcome from './components/MainWelcomeContainer/SecondMainWelcome.js';
 
-
+import Avatar from './components/SignUpContainer/Avatar.js';
 
 
 function App() {
@@ -30,10 +30,11 @@ function App() {
           <div className="App">
           <Row>
                 <Switch>
-                  <Route exact path="/" component={MainWelcome} />
-                  <Route path="/menu" component={Menu} />
+                  {/* <Route exact path="/" component={MainWelcome} /> */}
+                  <Route exact path="/" component={SecondMainWelcome} />
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
+                  <Route path="/avatar" component={Avatar} />
                   <Route path="/userhome" component={UserHome} />
                   <Route path="/game" component={Game} />
                   <Route path="/forgotpw" component={ForgotPassword} />

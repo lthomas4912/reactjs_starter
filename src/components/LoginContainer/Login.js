@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 
 
-import GetStartedButton from '../ButtonsContainer/GetStartedButton.js';
-import PaypalButton from '../ButtonsContainer/PaypalButton.js';
 import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
 
@@ -39,13 +37,14 @@ export default class WelcomeScreen extends Component {
                 </div>
 
                 <UserHomeButton className="login-home-butn" />
+               <Link  className="pw" to="/sign-up"> <p> Haven't Signed Up?</p></Link> 
+
                 <p className="pw">Forgot 
                         <Link className="link"to="/forgotpw"> Password</Link>
                         ?
                     </p>
             </form>
 
-                 <Row className="copyright"><i class="far fa-copyright"> <span className="copyright-code">Code Differently</span></i></Row>
             </div>
         );
     }

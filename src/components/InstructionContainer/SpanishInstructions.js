@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Row from 'react-bootstrap/Row';
+
 
 
 import RegresarButton from '../ButtonsContainer/RegresarButton.js';

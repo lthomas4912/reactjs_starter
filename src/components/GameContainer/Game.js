@@ -9,7 +9,6 @@ import scissors from '../../assets/images/scissors.png';
 
 
 
-const selection = ["rock", "paper", "scissors"];
 const compSelection = ["comprock", "compscissors", "comppaper"];
 
 
@@ -105,7 +104,7 @@ constructor(props){
     };
 
     render() {
-            const { playerOne, computer, winner} = this.state;
+            const { winner} = this.state;
 
             const playerHand = this.state.playerOne;
             const computerHand = this.state.computer;

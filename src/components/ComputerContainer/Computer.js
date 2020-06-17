@@ -2,7 +2,7 @@ import React from 'react';
 import comppaper from '../../assets/images/comppaper.png';
 import compscissors from '../../assets/images/compscissors.png';
 import comprock from '../../assets/images/comprock.png';
-import questionMark from '../../assets/images/question-mark.png';
+import questionMark from '../../assets/images/36601.png';
 
 
 

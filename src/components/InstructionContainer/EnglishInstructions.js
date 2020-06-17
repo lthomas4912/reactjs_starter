@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Row from 'react-bootstrap/Row';
+
 
 import PlayButton from '../ButtonsContainer/PlayButton.js';
 import InstruccionesButton from '../ButtonsContainer/InstruccionesButton.js';
