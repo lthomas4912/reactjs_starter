@@ -14,27 +14,27 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                    <input type="text" className="form-control firstName"name="first_name" placeholder="First name" />
                 </div>
 
                 <div className="form-group">
                     <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                    <input type="text" className="form-control lastName" placeholder="Last name" />
                 </div>
 
                 <div className="form-group">
                     <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control emailAddress" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
                     <label>Username</label>
-                    <input type="text" className="form-control" placeholder="Enter username" />
+                    <input type="text" className="form-control userName" placeholder="Enter username" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="form-control passWord" placeholder="Enter password" />
                 </div>
 
                 <button type="submit" className="user-direct ">Submit</button>
@@ -42,7 +42,7 @@ export default class SignUp extends Component {
                     Already registered? <a href="/sign-in">Click Here!</a>
                 </p>
             </form>
-            </Col>
+            </Col> 
         );
     }
 }
